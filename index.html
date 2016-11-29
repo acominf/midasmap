@@ -1,10 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>SMEEVE</title>
-</head>
-<body>
-	<h1>Sistema de monitoreo epidemiológico de enfermedadesvirales emergentes.</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Laboratorio de Genómica Viral y Humana UASLP">
+        <link rel="icon" href="assets/images/favicon.ico">
+        <title>MIDASmap</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-social.css" rel="stylesheet">
+        <link href="assets/css/estilos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Navegaci&oacute;n</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">MIDASmap</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Inicio</a></li>
+                                <li><a href="#acerca-de">Acerca del proyecto</a></li>
+                                <li><a href="#funcionamiento">Funcionamiento</a>
+                                <li><a href="#equipo-desarrollo">Equipo de desarrollo</a>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="first-slide" src="assets/images/slider_one.jpg" alt="Primer Slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Imagen Uno</h1>
+                            <p>Descripci&oacute;n de la imagen uno</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver Informaci&oacute;n</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="second-slide" src="assets/images/slider_two.jpg" alt="Segundo Slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Imagen Dos</h1>
+                            <p>Descripci&oacute;n de la imagen dos</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver Informaci&oacute;n</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="third-slide" src="assets/images/slider_three.jpg" alt="Tercer Slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Imagen Tres</h1>
+                            <p>Descripci&oacute;n de la imagen tres</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver Informaci&oacute;n</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        
+        <div class="container marketing">
+            <div id="acerca-de" class="row">
+                <div class="col-lg-12 seccion_h1"><h1>Acerca del proyecto</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="assets/images/idea.png" alt="Imagen" width="140" height="140">
+                    <h2>Idea Original</h2>
+                    <p>Descripci&oacute;n de la idea original</p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-circle" src="assets/images/propuesta.png" alt="Imagen" width="140" height="140">
+                    <h2>Propuesta</h2>
+                    <p>Descripci&oacute;n de la propuesta</p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-circle" src="assets/images/ventajas.png" alt="Imagen" width="140" height="140">
+                    <h2>Ventajas</h2>
+                    <p>Descripci&oacute;n de las ventajas</p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div id="funcionamiento" class="row">
+                <div class="col-lg-12 seccion_h1"><h1>¿Cómo funciona MIDASmap?</h1></div>
+            </div>
+            
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Primero <span class="text-muted">realizar esto.</span></h2>
+                    <p class="lead">Descripci&oacute;n del primer paso.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/one.jpg" alt="Imagen">
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div class="row featurette">
+                <div class="col-md-7 col-md-push-5">
+                    <h2 class="featurette-heading">Despu&eacute;s <span class="text-muted">realizar esto.</span></h2>
+                    <p class="lead">Descripci&oacute;n del segundo paso.</p>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/two.png" alt="Imagen">
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Finalmente <span class="text-muted">hacer esto.</span></h2>
+                    <p class="lead">Descripci&oacute;n del &uacute;ltimo paso.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/three.jpg" alt="Imagen">
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div class="row featurette">
+                <div class="col-md-7 col-md-push-5">
+                    <h2 class="featurette-heading">Vídeo <span class="text-muted">MIDASmap</span></h2>
+                    <p class="lead">Descripci&oacute;n del vídeo.</p>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/video.png" alt="Imagen">
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div id="equipo-desarrollo" class="row">
+                <div class="col-lg-12 seccion_h1"><h1>Equipo de desarrollo</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="assets/images/tux_one.jpg" alt="Imagen" width="140" height="140">
+                    <h2>Anahí Martínez</h2>
+                    <p>Ingeniero en Informática (Falta Descripci&oacute;n)</p>
+                    <p>
+                        <a href="https://linkedin.com" class="btn btn-social-icon btn-lg btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/AnahiMartinezJ" class="btn btn-social-icon btn-lg btn-github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://twitter.com" class="btn btn-social-icon btn-lg btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <!--<a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a>-->
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-circle" src="assets/images/tux_two.jpg" alt="Imagen" width="140" height="140">
+                    <h2>Octavio Medina</h2>
+                    <p>Ingeniero en Informática (Falta Descripci&oacute;n)</p>
+                    <p>
+                        <a href="https://linkedin.com" class="btn btn-social-icon btn-lg btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/OctavioMA" class="btn btn-social-icon btn-lg btn-github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://twitter.com" class="btn btn-social-icon btn-lg btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <!--<a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a>-->
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-circle" src="assets/images/tux_three.jpg" alt="Imagen" width="140" height="140">
+                    <h2>Marco Govea</h2>
+                    <p>Ingeniero en Informática (Falta Descripci&oacute;n)</p>
+                    <p>
+                        <a href="https://linkedin.com" class="btn btn-social-icon btn-lg btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/marcogovea" class="btn btn-social-icon btn-lg btn-github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://twitter.com" class="btn btn-social-icon btn-lg btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <!--<a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a>-->
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div id="contacto" class="row">
+                <div class="col-lg-12 seccion_h1"><h1>Contacto</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <footer>
+              <p class="pull-right"><a href="#">Back to top</a></p>
+              <p>&copy; 2016 <a href="http://www.genomica.uaslp.mx/">MIDASmap, Laboratorio de Gen&oacute;mica Viral y Humana UASLP.</a></p>
+            </footer>
+        </div>
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
 </html>
